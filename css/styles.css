@@ -1,16 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
 
+:root {
+    --header-font: 'Open Sans', arial, sans-serif;
+    --p-font: 'Merriweather', sans-serif;
+}
+
 body {
-    font-family:'Open Sans', sans-serif;
+    font-family: var(--header-font);
     font-size: 16px;
 }
 
 p {
-    font-family: 'Merriweather', sans-serif;
+    font-family: var(--p-font);
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
 }
 
 .container {
     display: flex;
+    position: relative;
+    text-align: center;
 }
 
 nav {
@@ -43,7 +55,7 @@ nav #progress-img {
 }
 
 nav #navbar-links {
-    margin: 10px;
+    margin: 10px 20px 10px 10px;
 }
 
 nav li {
@@ -52,6 +64,49 @@ nav li {
 
 #heroimg {
     width: 100vw;
-    height: 500px;
-    background-color: yellow;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+#title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+#title h1 {
+    font-size: 56px;
+    padding: 15px;
+}
+
+#title p {
+    padding: 15px 15px 25px;
+}
+
+#title hr {
+    width: 50px;
+    background-color: #e45541;
+    height: 3px;
+    border: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button#join-btn {
+    font-size: 14px;
+    padding: 10px 15px;
+    font-family: var(--header-font);
+    border: none;
+    border-radius: 5px;
+    background-color: #e45541;
+    color: white;
+    font-weight: bold;
 }

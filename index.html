@@ -8,6 +8,8 @@
 
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/styles.css" />
+
+        <script src="./javascript/script.js"></script>
     </head>
     <body>
         <nav class="container">
@@ -25,11 +27,15 @@
             </ul>
         </nav>
         <main>
-            <img id="heroimg" />
-            <div>
-                <h1>Natick High School Tennis Club</h1>
-                <h2>Lorem ipsum dolor sit amet</h2>
-            </div>
+            <header id="home-header" class="container">
+                <img id="heroimg" />
+                <div id="title">
+                    <h1 role="title">Natick High School Tennis Club</h1>
+                    <hr />
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <button id="join-btn" type="button" onclick="log()">JOIN</button>
+                </div>
+            </header>
             <p>Hello How are you?</p>
         </main>
     </body>
