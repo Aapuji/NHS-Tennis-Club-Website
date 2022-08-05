@@ -1,8 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
 
+/* COLOR THEME
+
+Light-cyan: #006ea9
+White-bg: #f8f1df
+White: #ffffff
+Green: #4da446
+Tennis-green: #d4f70c
+
+Complements:
+    #a93b00,
+    #dfe6f8,
+    #ffffff,
+    #9d46a4,
+    #2f0cf7
+*/
+
+/* Z-SCORES
+    Image: -1
+    Nav: 100
+*/
+
+/* DEFAULT STYLES */
+
 :root {
     --header-font: 'Open Sans', arial, sans-serif;
     --p-font: 'Merriweather', sans-serif;
+    --cyan: #006ea9;
+    --smokey-white: #f8f1df;
+    --court-green: #4da446;
 }
 
 body {
@@ -17,6 +43,17 @@ p {
 h1 {
     font-size: 32px;
     font-weight: bold;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+image {
+    z-index: -1;
 }
 
 .container {
@@ -25,10 +62,37 @@ h1 {
     text-align: center;
 }
 
+article {
+    margin: 15px;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.reverse-order {
+    order: row-reverse;
+}
+
+/* NAV */
+
 nav {
-    background-color: aqua;
+    background-color: white;
     justify-content: space-between;
     height: fit-content;
+    padding: 10px;
+    z-index: 100;
+    border-bottom: 1px solid rgba(126, 126, 126, 0.75);
 }
 
 nav #navbar-left {
@@ -43,7 +107,7 @@ nav #navbar-logo {
 }
 
 nav #navbar-progress-div {
-    color: red;
+    color: var(--);
     margin-left: 5px;
 }
 
@@ -62,6 +126,18 @@ nav li {
     margin-right: 20px;
 }
 
+nav a {
+    color: inherit;
+    font-weight: normal;
+}
+
+nav a:hover {
+    color: var(--cyan);
+    font-weight: bold;
+}
+
+/* HERO IMAGE */
+
 #heroimg {
     width: 100vw;
     height: 100vh;
@@ -79,6 +155,8 @@ nav li {
 #title h1 {
     font-size: 56px;
     padding: 15px;
+    /* color: var(--cyan); */
+    color: black;
 }
 
 #title p {
@@ -92,14 +170,6 @@ nav li {
     border: none;
 }
 
-a:hover {
-    cursor: pointer;
-}
-
-button:hover {
-    cursor: pointer;
-}
-
 button#join-btn {
     font-size: 14px;
     padding: 10px 15px;
@@ -109,4 +179,22 @@ button#join-btn {
     background-color: #e45541;
     color: white;
     font-weight: bold;
+}
+
+/* HOME INFO */
+
+article {
+    max-width: 100vw;
+    margin: auto;
+}
+
+article div {
+    width: 50%;
+    margin-right: 15px;
+}
+
+article img {
+    background-color: beige;
+    height: 200px;
+    width: 355.56px;
 }
