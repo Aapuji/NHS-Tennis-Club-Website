@@ -17,7 +17,7 @@ Complements:
 */
 
 /* Z-SCORES
-    Image: -1
+    Img: -1
     Nav: 100
 */
 
@@ -38,6 +38,7 @@ body {
 
 p {
     font-family: var(--p-font);
+    line-height: 24px;
 }
 
 h1 {
@@ -54,11 +55,7 @@ h2 {
     margin: 10px;
 }
 
-p {
-    line-height: 24px;
-}
-
-image {
+img {
     z-index: -1;
 }
 
@@ -172,7 +169,7 @@ nav a:hover {
     border: none;
 }
 
-button#join-btn {
+button#heroimg-join-btn {
     font-size: 14px;
     padding: 10px 15px;
     font-family: var(--header-font);
@@ -185,22 +182,6 @@ button#join-btn {
 
 /* HOME INFO */
 
-/* article {
-    width: 100%;
-    max-width: 100vw;
-    /* margin-left: 10%;
-    margin-right: 10%; 
-    justify-content: space-around;
-} */
-
-/* article:first-child {
-    padding-left: 15px;
-}
-
-article:last-child {
-    padding-right: 15px;
-} */
-
 article {
     margin: 15px;
     justify-content: center;
@@ -208,20 +189,60 @@ article {
     
 article div {
     width: 500px;
-    margin-right: 15px;
+}
+
+article.single-article img:first-child {
+    margin-right: 20px;
 }
 
 article div p {
     margin: 10px;
 }
 
-article img {
+.article-img {
     background-color: beige;
     height: 185px;      /* 200 - 15 */
     width: 355.56px;    
-    margin-top: 15px;
+    margin: 15px 10px;
 }
 
 .article-content h2, .article-content p {
     text-align: left;
+}
+
+a.inline {
+    font-weight: 500;
+    font-size: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    line-height: inherit;
+    text-decoration: inherit;
+    color: var(--cyan);
+}
+
+a.inline:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+#multi-article {
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+#multi-article > article {
+    margin: none;
+    width: 30%;
+}
+
+#multi-article > article img {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+}
+
+.vertical-content {
+    flex-direction: column;
 }

@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/styles.css" />
 
-        <script src="./javascript/script.js"></script>
+        <script src="./javascript/script.js" defer></script>
     </head>
     <body>
         <nav class="container sticky">
@@ -23,7 +23,7 @@
             <ul id="navbar-links" class="container">
                 <li><a src="./index.html" role="link">Home</a></li>
                 <li><a src="#" role="link">About</a></li>
-                <li><a src="#" role="link">Timeline</a></li>
+                <li><a src="#" role="link">Calendar</a></li>
             </ul>
         </nav>
         <main>
@@ -32,19 +32,53 @@
                     <h1 role="title">Natick High School Tennis Club</h1>
                     <hr />
                     <p>Lorem ipsum dolor sit amet</p>
-                    <button id="join-btn" type="button" onclick="log()">JOIN</button>
+                    <button id="heroimg-join-btn" type="button" onclick="log()">JOIN</button>
                 </div>
                 <img id="heroimg" />
             </header>
-            <article id="home-article1" class="container">
+            <article id="what-is-tc" class="container single-article">
                 <div class="article-content">
                     <h2>What is Tennis Club?</h2>
                     <p>
                         Tennis club is: lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh lectus, malesuada ut justo in, a b dapibus facilisis ante. Fusce condimentum neque nec accumsan convallis. Phasellus blandit ullamcorper ex, ac elementum ipsum congue a.
                     </p>
                 </div>
-                <img id=""/>
+                <img id="" class="article-img"/>
             </article>
+            <br />
+            <article id="when-to-meet" class="container single-article">
+                <img id="" class="article-img"/>
+                <div class="article-content">
+                    <h2>When does Tennis Club Meet?</h2>
+                    <p>
+                        Tennis club meets every ___ out on the tennis courts North-East of the front enterance to the school, near the parking lots and baseball field. Check the <a href="./calendar.html" class="inline">calendar</a> page for more information.
+                    </p>
+                </div>
+            </article>
+            <hr />
+            <div id="multi-article" class="container">
+                <article class="container vertical-content">
+                    <h2>How do I Join?</h2>
+                    <img />
+                    <p>
+                        You can join anytime! You should fill out this <a href="#" class="inline">form</a> to submit your skill-level.
+                    </p>
+                </article>
+                <article class="container vertical-content">
+                    <h2>How do I Join?</h2>
+                    <img />
+                    <p>
+                        You can join anytime! You should fill out this <a href="#" class="inline">form</a> to submit your skill-level.
+                    </p>
+                </article>
+                <article class="container vertical-content">
+                    <h2>How do I Join?</h2>
+                    <img />
+                    <p>
+                        You can join anytime! You should fill out this <a href="#" class="inline">form</a> to submit your skill-level.
+                    </p>
+                </article>
+            </div>
         </main>
     </body>
 </html>
