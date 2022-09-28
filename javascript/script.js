@@ -12,3 +12,8 @@ const squareImg = imgs => {
         ROOT.style.setProperty('--home-multi-img-height', width);
     }
 }
+
+// Suffix: -left, -right, -top, -bottom
+const getStyle = (tag, style) => {
+    return getComputedStyle(tag)[style];
+}
