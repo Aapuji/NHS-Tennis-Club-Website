@@ -330,3 +330,14 @@ footer {
         var(--footer-img-height)
     );
 }
+
+#website-host {
+    align-self: flex-end;
+    height: fit-content;
+    position: absolute;
+    right: calc(10vw - 50px + var(--footer-img-margin-r));
+    bottom: calc(
+        10px
+    );
+}
+
