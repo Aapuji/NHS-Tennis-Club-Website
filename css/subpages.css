@@ -1,2 +1,35 @@
 /* ABOUT */
 
+/* TITLE BACKGROUND/IMAGE */
+
+#header-bg {
+    width: 100vw;
+    height: 50vh;
+    background-color: whitesmoke;
+}
+
+#title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    width: 50%;
+}
+
+#title h1 {
+    font-size: 56px;
+    padding: 15px;
+    /* color: var(--cyan); */
+    color: black;
+}
+
+#title p {
+    padding: 15px 15px 25px;
+}
+
+#title hr {
+    width: 50px;
+    background-color: #e45541;
+    height: 3px;
+    border: none;
+}

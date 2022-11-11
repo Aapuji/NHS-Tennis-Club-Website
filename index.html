@@ -6,8 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Natick High School Tennis Club</title>
 
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/global.css" />
+        <link rel="stylesheet" href="./css/index.css" />
 
         <script src="./javascript/script.js"></script>
     </head>
@@ -28,16 +29,16 @@
                 <li><a href="./contact.html" role="link">Contact</a></li>
             </ul>
         </nav>
+        <header id="home-header" class="container">
+            <div id="title">
+                <h1 role="title">Natick High School Tennis Club</h1>
+                <hr />
+                <p>Lorem ipsum dolor sit amet</p>
+                <button id="heroimg-join-btn" type="button" onclick="log()">JOIN</button>
+            </div>
+            <img id="heroimg" />
+        </header>
         <main>
-            <header id="home-header" class="container">
-                <div id="title">
-                    <h1 role="title">Natick High School Tennis Club</h1>
-                    <hr />
-                    <p>Lorem ipsum dolor sit amet</p>
-                    <button id="heroimg-join-btn" type="button" onclick="log()">JOIN</button>
-                </div>
-                <img id="heroimg" />
-            </header>
             <article id="what-is-tc" class="container single-article">
                 <div class="article-content">
                     <h2>What is Tennis Club?</h2>
@@ -102,7 +103,7 @@
             <div id="footer-socials" class="container">
                 <a href="#" id="twitter-icon"><img src="./images/square.png" alt="twitter-icon" /></a>
                 <a href="#" id="facebook-icon"><img src="./images/square.png" alt="facebook-icon" /></a>
-                <a href="#" id="instagram-icon"><img src="./images/square.png" alt="instagram-icon" /></a>
+                <a href="#" id="instagram-icon"><img src="./images/instagram-icon.jpg" alt="instagram-icon" /></a>
             </div>
             <div id="author" class="small">Made by <a href="https://github.com/Aapuji" class="nostyle" role="link" target="_blank">Om Sharma</a></div>
             <div id="website-host" class="small">Hosted by Natick Public Schools</div>
